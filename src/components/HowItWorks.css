@@ -1,0 +1,89 @@
+.hiw {
+  padding: var(--section-pad);
+  background: var(--charcoal);
+}
+
+.hiw__header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.hiw__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  position: relative;
+}
+
+.hiw__step {
+  position: relative;
+  text-align: center;
+  padding: 40px 24px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+}
+
+.hiw__step-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(255, 194, 69, 0.1);
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  line-height: 1;
+}
+
+.hiw__step-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 194, 69, 0.08);
+  border: 1px solid rgba(255, 194, 69, 0.15);
+  color: var(--gold);
+}
+
+.hiw__step-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hiw__step-desc {
+  font-size: 0.9rem;
+  color: var(--gray-light);
+  line-height: 1.65;
+}
+
+/* Connector line between steps (desktop) */
+.hiw__connector {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .hiw__connector {
+    display: block;
+    position: absolute;
+    top: 68px;
+    right: -24px;
+    width: 48px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold-rich), transparent);
+    z-index: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .hiw__steps {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}

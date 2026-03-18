@@ -1,0 +1,291 @@
+.showcase {
+  padding: var(--section-pad);
+  background: var(--black);
+  overflow: hidden;
+}
+
+.showcase__header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+/* ─── Phone Layout ─── */
+.showcase__phones {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.showcase__phone {
+  width: 240px;
+  height: 480px;
+  background: var(--charcoal);
+  border-radius: 28px;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  padding: 14px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+  transition: transform 0.4s ease;
+}
+
+.showcase__phone--center {
+  width: 260px;
+  height: 520px;
+  z-index: 2;
+  border-color: rgba(255, 194, 69, 0.12);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.6),
+    0 0 60px rgba(255, 194, 69, 0.06);
+}
+
+.showcase__phone--left {
+  transform: translateX(30px) rotate(-4deg);
+  z-index: 1;
+}
+
+.showcase__phone--right {
+  transform: translateX(-30px) rotate(4deg);
+  z-index: 1;
+}
+
+/* ─── Screen Base ─── */
+.s-screen {
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+  border-radius: 18px;
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.s-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+/* ─── Stats Screen ─── */
+.s-screen__top {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.s-big-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.s-big-num {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+}
+
+.s-big-unit {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.s-bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.s-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.s-bar__fill {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 3px;
+}
+
+.s-bar__fill--alt {
+  background: var(--gold-rich);
+}
+
+.s-screen__badges {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.s-badge {
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 100px;
+  color: var(--white);
+}
+
+.s-badge--gold {
+  background: rgba(255, 194, 69, 0.1);
+  color: var(--gold);
+  border: 1px solid rgba(255, 194, 69, 0.2);
+}
+
+/* ─── Feed Screen ─── */
+.s-screen__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.s-screen__logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+
+.s-screen__nav-dots {
+  color: var(--gray);
+  letter-spacing: 2px;
+}
+
+.s-feed-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.s-feed-card--match {
+  border-color: rgba(255, 194, 69, 0.15);
+  text-align: center;
+}
+
+.s-feed-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.s-feed-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6ec1e4, #3a7bd5);
+  flex-shrink: 0;
+}
+
+.s-feed-name {
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.s-feed-meta {
+  font-size: 0.6rem;
+  color: var(--gray);
+}
+
+.s-feed-body {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--gray-light);
+}
+
+.s-feed-stats {
+  display: flex;
+  gap: 16px;
+  font-size: 0.65rem;
+  color: var(--gray);
+}
+
+.s-match-badge {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ff4d4d;
+  text-transform: uppercase;
+}
+
+.s-match-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin: 8px 0;
+}
+
+.s-match-vs {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--gold);
+}
+
+.s-match-time {
+  font-size: 0.6rem;
+  color: var(--gray);
+}
+
+/* ─── Games Screen ─── */
+.s-game-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.s-game-sport {
+  font-size: 1.4rem;
+}
+
+.s-game-title {
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.s-game-when {
+  font-size: 0.62rem;
+  color: var(--gray);
+  margin-top: 2px;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .showcase__phones {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .showcase__phone--left,
+  .showcase__phone--right {
+    transform: none;
+  }
+
+  .showcase__phone--center {
+    order: -1;
+  }
+}

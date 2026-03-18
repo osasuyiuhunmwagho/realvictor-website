@@ -1,0 +1,98 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 18px 0;
+  transition: all 0.35s ease;
+}
+
+.navbar--scrolled {
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(12px);
+  padding: 12px 0;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.navbar__logo-real {
+  color: var(--white);
+}
+
+.navbar__logo-victors {
+  color: var(--gold);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 36px;
+}
+
+.navbar__links a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gray-light);
+  transition: color 0.2s ease;
+}
+
+.navbar__links a:hover {
+  color: var(--gold);
+}
+
+.navbar__cta {
+  padding: 10px 24px;
+  font-size: 0.82rem;
+}
+
+.navbar__toggle {
+  display: none;
+  background: none;
+  color: var(--white);
+}
+
+/* ─── Mobile ─── */
+.navbar__mobile {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  background: var(--charcoal);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar__mobile a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .navbar__links,
+  .navbar__cta {
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__mobile {
+    display: flex;
+  }
+}
