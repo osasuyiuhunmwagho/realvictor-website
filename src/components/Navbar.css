@@ -27,9 +27,11 @@
 }
 
 .navbar__logo-img {
-  height: 192px;
+  height: 72px;
   width: auto;
   filter: invert(1);
+  transform: scale(1.35);
+  transform-origin: left center;
 }
 
 .navbar__links {

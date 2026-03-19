@@ -38,7 +38,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <a href="#waitlist" className="btn-primary navbar__cta">
-          Join Waitlist
+          Join Community
         </a>
 
         {/* Mobile Toggle */}
@@ -68,7 +68,7 @@ export default function Navbar() {
             className="btn-primary"
             onClick={() => setMenuOpen(false)}
           >
-            Join Waitlist
+            Join Community
           </a>
         </div>
       )}

@@ -46,46 +46,8 @@
   margin: 0 auto 32px;
 }
 
-.waitlist__form {
-  display: flex;
-  gap: 12px;
-  max-width: 460px;
-  margin: 0 auto;
-}
-
-.waitlist__input {
-  flex: 1;
-  padding: 14px 18px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius-sm);
-  color: var(--white);
-  font-size: 0.95rem;
-  transition: border-color 0.2s ease;
-}
-
-.waitlist__input::placeholder {
-  color: var(--gray);
-}
-
-.waitlist__input:focus {
-  border-color: var(--gold);
-  background: rgba(255, 255, 255, 0.08);
-}
-
 .waitlist__btn {
-  flex-shrink: 0;
-}
-
-.waitlist__success {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  color: var(--gold);
-  font-weight: 600;
-  font-size: 1.05rem;
-  padding: 16px 0;
+  display: inline-flex;
 }
 
 .waitlist__trust {
@@ -95,10 +57,6 @@
 }
 
 @media (max-width: 540px) {
-  .waitlist__form {
-    flex-direction: column;
-  }
-
   .waitlist__card {
     padding: 40px 24px;
   }

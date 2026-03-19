@@ -30,7 +30,7 @@ export default function Hero() {
 
           <div className="hero__actions">
             <a href="#waitlist" className="btn-primary">
-              Join the Waitlist <ArrowRight size={18} />
+              Join Community <ArrowRight size={18} />
             </a>
             <a href="#how-it-works" className="btn-secondary">
               See How It Works <ChevronDown size={18} />

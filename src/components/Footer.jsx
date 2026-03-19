@@ -5,7 +5,7 @@ const LINKS = [
   { label: 'Features', href: '#features' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'Sports', href: '#sports' },
-  { label: 'Waitlist', href: '#waitlist' },
+  { label: 'Community', href: '#waitlist' },
 ]
 
 const SOCIALS = [
