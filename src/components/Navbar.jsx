@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import logo from '../assets/RV-logo.png'
 import './Navbar.css'
 
 const NAV_LINKS = [
@@ -23,8 +24,7 @@ export default function Navbar() {
       <div className="navbar__inner container">
         {/* Logo */}
         <a href="#" className="navbar__logo">
-          <span className="navbar__logo-real">REAL</span>
-          <span className="navbar__logo-victors">VICTORS</span>
+          <img src={logo} alt="RealVictors" className="navbar__logo-img" />
         </a>
 
         {/* Desktop Links */}

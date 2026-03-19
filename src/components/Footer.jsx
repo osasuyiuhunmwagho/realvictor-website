@@ -1,3 +1,4 @@
+import logo from '../assets/RV-logo.png'
 import './Footer.css'
 
 const LINKS = [
@@ -20,8 +21,7 @@ export default function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <a href="#" className="footer__logo">
-            <span className="footer__logo-real">REAL</span>
-            <span className="footer__logo-victors">VICTORS</span>
+            <img src={logo} alt="RealVictors" className="footer__logo-img" />
           </a>
           <p className="footer__tagline">
             Your sports community, all in one place.
