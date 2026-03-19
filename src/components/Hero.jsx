@@ -1,10 +1,10 @@
 import { ArrowRight, ChevronDown } from 'lucide-react'
+import homepageImg from '../assets/RV-homepage.png'
 import './Hero.css'
 
 export default function Hero() {
   return (
     <section className="hero noise-bg">
-      {/* Ambient background elements */}
       <div className="hero__bg">
         <div className="hero__spotlight" />
         <div className="hero__grid-lines" />
@@ -38,50 +38,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* App Mockup */}
+        {/* Real app screenshot in a phone frame */}
         <div className="hero__mockup">
           <div className="hero__phone">
-            <div className="hero__phone-screen">
-              {/* Simulated app UI */}
-              <div className="mock-header">
-                <span className="mock-avatar" />
-                <div>
-                  <div className="mock-name">Marcus J.</div>
-                  <div className="mock-tag">@marcusj • Basketball</div>
-                </div>
-                <div className="mock-rating">4.8 ★</div>
-              </div>
-
-              <div className="mock-stats-row">
-                <div className="mock-stat">
-                  <span className="mock-stat-num">127</span>
-                  <span className="mock-stat-label">Games</span>
-                </div>
-                <div className="mock-stat">
-                  <span className="mock-stat-num">34</span>
-                  <span className="mock-stat-label">Wins</span>
-                </div>
-                <div className="mock-stat">
-                  <span className="mock-stat-num">89%</span>
-                  <span className="mock-stat-label">Rate</span>
-                </div>
-              </div>
-
-              <div className="mock-card">
-                <div className="mock-card-badge">NEXT GAME</div>
-                <div className="mock-card-title">5v5 Pickup — Downtown Courts</div>
-                <div className="mock-card-meta">Today, 6:30 PM • 3 spots left</div>
-              </div>
-
-              <div className="mock-card mock-card--alt">
-                <div className="mock-card-badge mock-card-badge--team">TEAM</div>
-                <div className="mock-card-title">Eastside Ballers</div>
-                <div className="mock-card-meta">12 Members • 8-2 Record</div>
-              </div>
-            </div>
+            <img
+              src={homepageImg}
+              alt="RealVictors app — discover pickup games near you"
+              className="hero__phone-img"
+            />
           </div>
 
-          {/* Floating accent card */}
           <div className="hero__float-card">
             <span className="hero__float-icon">🏆</span>
             <div>

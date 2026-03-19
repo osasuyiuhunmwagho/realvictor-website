@@ -4,7 +4,7 @@ import './Waitlist.css'
 
 export default function Waitlist() {
   const ref = useFadeUp()
-  const googleFormUrl = 'https://forms.gle/your-google-form-id'
+  const googleFormUrl = 'https://forms.gle/ZrYCvZAPLqZnifPH7'
 
   return (
     <section className="waitlist noise-bg" id="waitlist" ref={ref}>
@@ -20,7 +20,6 @@ export default function Waitlist() {
             and priority invites.
           </p>
 
-          {/* Replace this placeholder with your real Google Form URL when ready. */}
           <a
             href={googleFormUrl}
             target="_blank"
@@ -30,9 +29,7 @@ export default function Waitlist() {
             Join Community <ArrowRight size={18} />
           </a>
 
-          <p className="waitlist__trust">
-            Placeholder Google Form link. Update it before launch.
-          </p>
+          <p className="waitlist__trust">No spam. Early access only.</p>
         </div>
       </div>
     </section>

@@ -1,9 +1,12 @@
 import { useFadeUp } from '../hooks/useFadeUp'
+import rv2Img from '../assets/RV-2.png'
+import rv3Img from '../assets/RV-3.png'
+import rvMapImg from '../assets/RV-map.png'
 import './Showcase.css'
 
 /**
- * Product Showcase — displays overlapping phone mockups
- * showcasing different app screens (stats, teams, match cards).
+ * Product Showcase — overlapping phone mockups
+ * using real app screenshots for game detail, lineup, and map views.
  */
 export default function Showcase() {
   const ref = useFadeUp()
@@ -23,87 +26,19 @@ export default function Showcase() {
         </div>
 
         <div className="showcase__phones fade-up">
-          {/* Phone 1 — Stats / Profile */}
+          {/* Left — Team lineup / exhibition */}
           <div className="showcase__phone showcase__phone--left">
-            <div className="s-screen">
-              <div className="s-screen__top">
-                <div className="s-label">PLAYER STATS</div>
-                <div className="s-big-stat">
-                  <span className="s-big-num">24.7</span>
-                  <span className="s-big-unit">PPG</span>
-                </div>
-                <div className="s-bar-row">
-                  <div className="s-bar"><div className="s-bar__fill" style={{ width: '82%' }} /></div>
-                  <div className="s-bar"><div className="s-bar__fill s-bar__fill--alt" style={{ width: '67%' }} /></div>
-                  <div className="s-bar"><div className="s-bar__fill" style={{ width: '91%' }} /></div>
-                </div>
-              </div>
-              <div className="s-screen__badges">
-                <span className="s-badge">🏅 Top 5%</span>
-                <span className="s-badge s-badge--gold">MVP x3</span>
-              </div>
-            </div>
+            <img src={rv3Img} alt="Exhibition game lineup" className="showcase__phone-img" />
           </div>
 
-          {/* Phone 2 — Main / Feed (center, elevated) */}
+          {/* Center — Game detail (elevated) */}
           <div className="showcase__phone showcase__phone--center">
-            <div className="s-screen">
-              <div className="s-screen__header">
-                <span className="s-screen__logo">RV</span>
-                <span className="s-screen__nav-dots">•••</span>
-              </div>
-              <div className="s-feed-card">
-                <div className="s-feed-top">
-                  <div className="s-feed-avatar" />
-                  <div>
-                    <div className="s-feed-name">Sarah K.</div>
-                    <div className="s-feed-meta">Soccer • 2h ago</div>
-                  </div>
-                </div>
-                <div className="s-feed-body">Just dominated the 7v7 league final ⚽🔥</div>
-                <div className="s-feed-stats">
-                  <span>❤️ 48</span>
-                  <span>💬 12</span>
-                </div>
-              </div>
-              <div className="s-feed-card s-feed-card--match">
-                <div className="s-match-badge">LIVE MATCH</div>
-                <div className="s-match-score">
-                  <span>Wolves</span>
-                  <span className="s-match-vs">3 — 2</span>
-                  <span>Hawks</span>
-                </div>
-                <div className="s-match-time">Q4 • 2:31</div>
-              </div>
-            </div>
+            <img src={rv2Img} alt="Game detail — join a pickup run" className="showcase__phone-img" />
           </div>
 
-          {/* Phone 3 — Team / Games */}
+          {/* Right — Map discovery */}
           <div className="showcase__phone showcase__phone--right">
-            <div className="s-screen">
-              <div className="s-label">UPCOMING GAMES</div>
-              <div className="s-game-item">
-                <div className="s-game-sport">🏀</div>
-                <div>
-                  <div className="s-game-title">5v5 Pickup</div>
-                  <div className="s-game-when">Today, 7 PM • 2 spots</div>
-                </div>
-              </div>
-              <div className="s-game-item">
-                <div className="s-game-sport">⚽</div>
-                <div>
-                  <div className="s-game-title">Indoor Soccer League</div>
-                  <div className="s-game-when">Tomorrow, 8 PM</div>
-                </div>
-              </div>
-              <div className="s-game-item">
-                <div className="s-game-sport">🎾</div>
-                <div>
-                  <div className="s-game-title">Singles Tournament</div>
-                  <div className="s-game-when">Sat, 10 AM • Open</div>
-                </div>
-              </div>
-            </div>
+            <img src={rvMapImg} alt="Map view — find games near you" className="showcase__phone-img" />
           </div>
         </div>
       </div>

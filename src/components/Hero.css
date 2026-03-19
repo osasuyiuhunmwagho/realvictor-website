@@ -24,7 +24,6 @@
   border-radius: 50%;
 }
 
-/* Subtle court-line grid */
 .hero__grid-lines {
   position: absolute;
   inset: 0;
@@ -102,7 +101,7 @@
   flex-wrap: wrap;
 }
 
-/* ─── Phone Mockup ─── */
+/* ─── Phone Mockup (real screenshot) ─── */
 .hero__mockup {
   position: relative;
   display: flex;
@@ -111,127 +110,20 @@
 
 .hero__phone {
   width: 280px;
-  height: 560px;
   background: var(--charcoal);
   border-radius: 32px;
   border: 2px solid rgba(255, 255, 255, 0.08);
-  padding: 16px;
+  padding: 10px;
   box-shadow:
     0 20px 60px rgba(0, 0, 0, 0.6),
     0 0 0 1px rgba(255, 194, 69, 0.08);
   overflow: hidden;
 }
 
-.hero__phone-screen {
+.hero__phone-img {
   width: 100%;
-  height: 100%;
-  background: var(--black);
-  border-radius: 20px;
-  padding: 20px 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  overflow: hidden;
-}
-
-/* Mock UI Elements */
-.mock-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.mock-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold), var(--gold-rich));
-  flex-shrink: 0;
-}
-
-.mock-name {
-  font-weight: 700;
-  font-size: 0.9rem;
-}
-
-.mock-tag {
-  font-size: 0.65rem;
-  color: var(--gray);
-}
-
-.mock-rating {
-  margin-left: auto;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--gold);
-  background: rgba(255, 194, 69, 0.1);
-  padding: 4px 10px;
-  border-radius: 100px;
-}
-
-.mock-stats-row {
-  display: flex;
-  justify-content: space-around;
-  padding: 14px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.mock-stat {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.mock-stat-num {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--white);
-}
-
-.mock-stat-label {
-  font-size: 0.6rem;
-  color: var(--gray);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.mock-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
-  padding: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.mock-card--alt {
-  border-color: rgba(255, 194, 69, 0.12);
-}
-
-.mock-card-badge {
-  font-size: 0.55rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: var(--gold);
-  text-transform: uppercase;
-}
-
-.mock-card-badge--team {
-  color: #6ec1e4;
-}
-
-.mock-card-title {
-  font-weight: 700;
-  font-size: 0.8rem;
-}
-
-.mock-card-meta {
-  font-size: 0.65rem;
-  color: var(--gray);
+  border-radius: 22px;
+  display: block;
 }
 
 /* Floating Card */
@@ -302,7 +194,6 @@
 @media (max-width: 480px) {
   .hero__phone {
     width: 240px;
-    height: 480px;
   }
 
   .hero__actions {
