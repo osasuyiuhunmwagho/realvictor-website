@@ -18,14 +18,14 @@ export default function Hero() {
           </div>
 
           <h1 className="hero__headline">
-            Find the Game.<br />
-            <span className="hero__headline-gold">Join the Squad.</span>
+            Open. Find.<br />
+            <span className="hero__headline-gold">Play.</span>
           </h1>
 
           <p className="hero__sub">
-            RealVictors is the sports social platform where athletes discover
-            local games, join teams, track stats, and build their name in the
-            community.
+            See upcoming games near you. Explore games on a live Ottawa map.
+            Show up and build your reliability. RealVictors makes pickup sports
+            simple.
           </p>
 
           <div className="hero__actions">

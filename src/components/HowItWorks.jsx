@@ -1,25 +1,25 @@
-import { UserPlus, Search, TrendingUp } from 'lucide-react'
+import { Eye, MapPin, Zap } from 'lucide-react'
 import { useFadeUp } from '../hooks/useFadeUp'
 import './HowItWorks.css'
 
 const STEPS = [
   {
     num: '01',
-    icon: UserPlus,
-    title: 'Create Your Athlete Profile',
-    desc: 'Sign up, pick your sports, and build a profile that showcases your game.',
+    icon: Eye,
+    title: 'Open',
+    desc: 'See upcoming games near you. Browse what's happening today, tomorrow, and this week.',
   },
   {
     num: '02',
-    icon: Search,
-    title: 'Discover Games & Teams',
-    desc: 'Browse local matchups, open runs, and teams looking for players like you.',
+    icon: MapPin,
+    title: 'Find',
+    desc: 'Explore games on a live Ottawa map. Filter by skill level, distance, and sport.',
   },
   {
     num: '03',
-    icon: TrendingUp,
-    title: 'Compete, Connect & Grow',
-    desc: 'Play games, track your stats, climb the rankings, and grow your network.',
+    icon: Zap,
+    title: 'Play',
+    desc: 'Show up. Compete. Build your reliability and become a trusted player in the community.',
   },
 ]
 
@@ -31,7 +31,7 @@ export default function HowItWorks() {
       <div className="container">
         <div className="hiw__header fade-up">
           <span className="section-label">How It Works</span>
-          <h2 className="section-title">Three Steps to Game Day</h2>
+          <h2 className="section-title">Open. Find. Play.</h2>
         </div>
 
         <div className="hiw__steps">

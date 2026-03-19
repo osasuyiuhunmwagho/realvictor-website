@@ -4,14 +4,11 @@ import './Footer.css'
 const LINKS = [
   { label: 'Features', href: '#features' },
   { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Sports', href: '#sports' },
   { label: 'Community', href: '#waitlist' },
 ]
 
 const SOCIALS = [
-  { label: 'Twitter', href: '#' },
-  { label: 'Instagram', href: '#' },
-  { label: 'TikTok', href: '#' },
+  { label: 'Instagram', href: 'https://www.instagram.com/realvictorsproduction/' },
 ]
 
 export default function Footer() {
