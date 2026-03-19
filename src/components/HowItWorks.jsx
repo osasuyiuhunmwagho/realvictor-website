@@ -7,7 +7,7 @@ const STEPS = [
     num: '01',
     icon: Eye,
     title: 'Open',
-    desc: 'See upcoming games near you. Browse what's happening today, tomorrow, and this week.',
+    desc: "See upcoming games near you. Browse what's happening today, tomorrow, and this week.",
   },
   {
     num: '02',
